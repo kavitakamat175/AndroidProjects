@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Calculator App"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvFirstNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter first number" />
+
+    <EditText
+        android:id="@+id/etNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvFirstNum"
+        android:layout_toRightOf="@id/tvFirstNum"
+        android:layout_alignLeft="@id/etNum2"
+        android:hint="Enter first number" />
+
+    <TextView
+        android:id="@+id/tvSecNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFirstNum"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter second number" />
+
+    <EditText
+        android:id="@+id/etNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvSecNum"
+        android:layout_toRightOf="@id/tvSecNum"
+
+        android:hint="Enter Second Number" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSecNum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Result"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResult"
+        android:layout_marginTop="20dp"
+        android:onClick="callCalc"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnAdd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/btnAdd"
+        android:onClick="callCalc"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btnMult"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResult"
+        android:layout_alignBaseline="@id/btnSub"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/btnSub"
+        android:onClick="callCalc"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResult"
+        android:layout_alignBaseline="@id/btnMult"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/btnMult"
+        android:onClick="callCalc"
+        android:text="/" />
+
+
+</RelativeLayout>
