@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:title="Open File"
+    android:id="@+id/fileOpen"
+android:icon="@drawable/file_open"/>
+    <item
+        android:title="Save File"
+        android:id="@+id/fileSave"
+        android:icon="@drawable/file_save"/>
+    <item
+        android:title="File Download"
+        android:id="@+id/fileDownload"
+        android:icon="@drawable/file_download"/>
+</menu>

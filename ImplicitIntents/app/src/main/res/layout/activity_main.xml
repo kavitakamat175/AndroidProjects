@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:rowCount="5"
+    tools:context=".MainActivity">
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/etNumber"
+    android:inputType="phone"
+    android:hint="Enter phone Number"/>
+    <ListView
+        android:id="@+id/lv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+</GridLayout>
